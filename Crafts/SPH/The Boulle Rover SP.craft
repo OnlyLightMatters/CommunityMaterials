@@ -1,0 +1,1996 @@
+ship = The Boulle Rover SP
+version = 1.11.0
+description = 
+type = SPH
+size = 2.8007915,1.875,1.875
+steamPublishedFileId = 0
+persistentId = 3442750483
+rot = 0,0,0,0
+missionFlag = Squad/Flags/default
+vesselType = Debris
+OverrideDefault = False,False,False,False
+OverrideActionControl = 0,0,0,0
+OverrideAxisControl = 0,0,0,0
+OverrideGroupNames = ,,,
+PART
+{
+	part = ServiceBay.125.v2_4294607566
+	partName = Part
+	persistentId = 2497371399
+	pos = -0.866354048,7.51191616,-1.53366613
+	attPos = 0,0,0
+	attPos0 = -0.866354048,7.51191616,-1.53366613
+	rot = 0.5,-0.5,0.5,0.5
+	attRot = 0,0,0.707106769,0.707106769
+	attRot0 = 0.707106769,0,0,0.707106769
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = rotor.02_4294600110
+	link = rotor.02_4294599134
+	link = seatExternalCmd_4294596426
+	link = strutCube_4294588864
+	link = batteryPack_4294583116
+	link = batteryPack_4294582728
+	link = solarPanels5_4294550916
+	link = solarPanels5_4294550728
+	attN = top2,Null_0_0|0.25|0_0|-1|0_0|0.25|0_0|-1|0
+	attN = bottom2,Null_0_0|-0.25|0_0|1|0_0|-0.25|0_0|1|0
+	attN = top,rotor.02_4294600110_0|0.300000012|0_0|1|0_0|0.300000012|0_0|1|0
+	attN = bottom,rotor.02_4294599134_0|-0.300000012|0_0|-1|0_0|-0.300000012|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = False
+		animTime = 1
+		animSpeed = 10
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = Abort
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			deployPercent
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoBay
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleConductionMultiplier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.25
+		defaultScale = 1.25
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 500
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSeeThroughObject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = rotor.02_4294600110
+	partName = Part
+	persistentId = 1401097171
+	pos = -1.16635454,7.51191616,-1.53366613
+	attPos = 0,0,0
+	attPos0 = 0,0.300000012,0
+	rot = 0.5,-0.5,0.5,0.5
+	attRot = 0,0,-0.707106709,-0.707106709
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 350
+	modMass = 0.210000008
+	modSize = 0,0,0
+	link = Size1p5.Size0.Adapter.01_4294567628
+	attN = bottom,ServiceBay.125.v2_4294607566_0|0|0_0|-1|0_0|0|0_0|-1|0
+	attN = top,Size1p5.Size0.Adapter.01_4294567628_0|0.419999987|0_0|1|0_0|0.419999957|0_-1.1920929E-07|1.00000012|0
+	attN = N2_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499642|0.3125_-1.1920929E-07|0|1.00000012
+	attN = N2_2,Null_0_-2.17226392E-09|0.312499702|-0.31249994_5.32632214E-07|-1.22464738E-16|-1_0|0.312499642|-0.3125_5.36441803E-07|0|-0.99999994
+	attN = N3_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499642|0.3125_-1.1920929E-07|0|1.00000012
+	attN = N3_2,Null_0_-0.270632923|0.312499702|-0.156250015_-0.866025388|-1.64071556E-17|-0.5_-0.270632982|0.312499642|-0.15625_-0.866025567|0|-0.5
+	attN = N3_3,Null_0_0.270632923|0.312499702|-0.15624997_0.866025507|-2.2852221E-16|-0.5_0.270632982|0.312499642|-0.15625_0.866025388|0|-0.50000006
+	attN = N4_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499642|0.3125_-1.1920929E-07|0|1.00000012
+	attN = N4_2,Null_0_-0.312350035|0.312499702|3.78799356E-08_-0.99999994|0|1.78813934E-07_-0.312350035|0.312499642|0_-1|0|2.38418579E-07
+	attN = N4_3,Null_0_-2.17226392E-09|0.312499702|-0.31249994_5.32632214E-07|-1.22464738E-16|-1_0|0.312499642|-0.3125_5.36441803E-07|0|-0.99999994
+	attN = N4_4,Null_0_0.31249997|0.312499702|5.52597115E-08_1.00000012|0|-1.1920929E-07_0.3125|0.312499642|0_1|0|-1.1920929E-07
+	attN = N6_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499642|0.3125_-1.1920929E-07|0|1.00000012
+	attN = N6_2,Null_0_-0.270632982|0.312499702|0.15625003_-0.866025388|1.96494928E-16|0.5_-0.270632982|0.312499642|0.15625_-0.866025329|0|0.5
+	attN = N6_3,Null_0_-0.270632952|0.312499702|-0.15624997_-0.866025388|-1.64071556E-17|-0.5_-0.270632982|0.312499642|-0.15625_-0.866025567|0|-0.5
+	attN = N6_4,Null_0_-2.48270404E-09|0.312499702|-0.31249994_5.32632214E-07|-1.22464738E-16|-1_0|0.312499642|-0.3125_5.36441803E-07|0|-0.99999994
+	attN = N6_5,Null_0_0.270632923|0.312499702|-0.156249911_0.866025507|-2.2852221E-16|-0.5_0.270632982|0.312499642|-0.15625_0.866025388|0|-0.50000006
+	attN = N6_6,Null_0_0.270632923|0.312499702|0.156250015_0.866025507|-1.96494955E-16|0.499999881_0.270632982|0.312499642|0.15625_0.866025507|0|0.499999821
+	attN = N8_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499642|0.3125_-1.1920929E-07|0|1.00000012
+	attN = N8_2,Null_0_-0.220970914|0.312499702|0.220970929_-0.707106829|1.60437463E-16|0.707106709_-0.220970869|0.312499642|0.220971107_-0.707107067|0|0.707106829
+	attN = N8_3,Null_0_-0.312350035|0.312499702|3.78799356E-08_-0.99999994|0|1.78813934E-07_-0.312350035|0.312499642|0_-1|0|2.38418579E-07
+	attN = N8_4,Null_0_-0.220970914|0.312499702|-0.220970839_-0.70710659|-3.58690958E-17|-0.707106948_-0.220970869|0.312499642|-0.220970631_-0.707106709|0|-0.707106888
+	attN = N8_5,Null_0_-2.17226392E-09|0.312499702|-0.31249994_5.32632214E-07|-1.22464738E-16|-1_0|0.312499642|-0.3125_5.36441803E-07|0|-0.99999994
+	attN = N8_6,Null_0_0.220970809|0.312499702|-0.220970839_0.707106829|-2.09060305E-16|-0.707106948_0.220970869|0.312499642|-0.220970631_0.707106709|0|-0.707106829
+	attN = N8_7,Null_0_0.31249997|0.312499702|5.52597115E-08_1.00000012|0|-1.1920929E-07_0.3125|0.312499642|0_1|0|-1.1920929E-07
+	attN = N8_8,Null_0_0.220970869|0.312499702|0.220970869_0.707106829|-1.60437463E-16|0.707106709_0.220970869|0.312499642|0.220971107_0.707106829|0|0.707106769
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDynamicNodes
+		isEnabled = True
+		setIndex = 0
+		NodeSetIdx = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRoboticServoRotor
+		isEnabled = True
+		rpmLimit = 45
+		rotateCounterClockwise = True
+		inverted = False
+		ratcheted = 0
+		brakePercentage = 100
+		servoIsLocked = False
+		servoIsMotorized = True
+		jointParentRotation = 0,0,0,1
+		servoMotorIsEngaged = True
+		launchPosition = 45
+		servoMotorSize = 100
+		servoMotorLimit = 100
+		lockPartOnPowerLoss = True
+		servoTransformPosition = 0,0,1.36598093E-08
+		servoTransformRotation = 0,0,0,1
+		useMultipleDragCubes = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			BrakeAction
+			{
+				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MotorPowerAction
+			{
+				actionGroup = Custom01
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MotorDirectionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleServoLockedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoEngageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoDisgageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleMotorAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MotorOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MotorOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ResetPosition
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			rpmLimit
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+			servoMotorLimit
+			{
+				axisGroup = MainThrottle
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0.200000003
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceAutoShiftState
+		isEnabled = True
+		affectedResourceName = ElectricCharge
+		affectedModuleName = ModuleRoboticServoRotor
+		resourceShutOffStartUpUsePercent = True
+		resourceShutOffHandler = True
+		resourceStartUpHandler = True
+		resourceShutOffAmount = 0
+		resourceShutOffPercent = 0
+		resourceStartUpAmount = 0
+		resourceStartUpPercent = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = rotor.02_4294599134
+	partName = Part
+	persistentId = 3678087587
+	pos = -0.566353559,7.51191616,-1.53366613
+	attPos = 0,0,0
+	attPos0 = 0,-0.300000012,0
+	rot = -0.5,-0.5,0.5,-0.5
+	attRot = 0,0,-0.707106709,0.707106709
+	attRot0 = 0,0,1,0
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 350
+	modMass = 0.210000008
+	modSize = 0,0,0
+	link = Size1p5.Size0.Adapter.01_4294566310
+	attN = bottom,ServiceBay.125.v2_4294607566_0|0|0_0|-1|0_0|0|0_0|-1|0
+	attN = top,Size1p5.Size0.Adapter.01_4294566310_0|0.419999987|0_0|1|0_0|0.420000017|0_1.1920929E-07|1.00000012|0
+	attN = N2_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499702|0.3125_1.1920929E-07|0|1.00000012
+	attN = N2_2,Null_0_-2.17226392E-09|0.312499702|-0.31249994_5.32632214E-07|-1.22464738E-16|-1_0|0.312499702|-0.3125_8.34465027E-07|0|-1.00000024
+	attN = N3_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499702|0.3125_1.1920929E-07|0|1.00000012
+	attN = N3_2,Null_0_-0.270632923|0.312499702|-0.156250015_-0.866025388|-1.64071556E-17|-0.5_-0.270632982|0.312499702|-0.15625_-0.866025388|0|-0.50000006
+	attN = N3_3,Null_0_0.270632923|0.312499702|-0.15624997_0.866025507|-2.2852221E-16|-0.5_0.270632982|0.312499702|-0.15625_0.866025567|0|-0.5
+	attN = N4_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499702|0.3125_1.1920929E-07|0|1.00000012
+	attN = N4_2,Null_0_-0.312350035|0.312499702|3.78799356E-08_-0.99999994|0|1.78813934E-07_-0.312350035|0.312499702|0_-1|0|2.38418579E-07
+	attN = N4_3,Null_0_-2.17226392E-09|0.312499702|-0.31249994_5.32632214E-07|-1.22464738E-16|-1_0|0.312499702|-0.3125_8.34465027E-07|0|-1.00000024
+	attN = N4_4,Null_0_0.31249997|0.312499702|5.52597115E-08_1.00000012|0|-1.1920929E-07_0.3125|0.312499702|0_1|5.96046448E-08|-1.1920929E-07
+	attN = N6_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499702|0.3125_1.1920929E-07|0|1.00000012
+	attN = N6_2,Null_0_-0.270632982|0.312499702|0.15625003_-0.866025388|1.96494928E-16|0.5_-0.270632982|0.312499702|0.15625_-0.866025388|0|0.5
+	attN = N6_3,Null_0_-0.270632952|0.312499702|-0.15624997_-0.866025388|-1.64071556E-17|-0.5_-0.270632982|0.312499702|-0.15625_-0.866025388|0|-0.50000006
+	attN = N6_4,Null_0_-2.48270404E-09|0.312499702|-0.31249994_5.32632214E-07|-1.22464738E-16|-1_0|0.312499702|-0.3125_8.34465027E-07|0|-1.00000024
+	attN = N6_5,Null_0_0.270632923|0.312499702|-0.156249911_0.866025507|-2.2852221E-16|-0.5_0.270632982|0.312499702|-0.15625_0.866025567|0|-0.5
+	attN = N6_6,Null_0_0.270632923|0.312499702|0.156250015_0.866025507|-1.96494955E-16|0.499999881_0.270632982|0.312499702|0.15625_0.866025329|0|0.5
+	attN = N8_1,Null_0_-2.94918827E-08|0.312499702|0.31250006_0|0|1_0|0.312499702|0.3125_1.1920929E-07|0|1.00000012
+	attN = N8_2,Null_0_-0.220970914|0.312499702|0.220970929_-0.707106829|1.60437463E-16|0.707106709_-0.220970869|0.312499702|0.220971107_-0.707106829|0|0.707106769
+	attN = N8_3,Null_0_-0.312350035|0.312499702|3.78799356E-08_-0.99999994|0|1.78813934E-07_-0.312350035|0.312499702|0_-1|0|2.38418579E-07
+	attN = N8_4,Null_0_-0.220970914|0.312499702|-0.220970839_-0.70710659|-3.58690958E-17|-0.707106948_-0.220970869|0.312499702|-0.220971107_-0.707106709|0|-0.707106829
+	attN = N8_5,Null_0_-2.17226392E-09|0.312499702|-0.31249994_5.32632214E-07|-1.22464738E-16|-1_0|0.312499702|-0.3125_8.34465027E-07|0|-1.00000024
+	attN = N8_6,Null_0_0.220970809|0.312499702|-0.220970839_0.707106829|-2.09060305E-16|-0.707106948_0.220970869|0.312499702|-0.220971107_0.707106948|0|-0.707106829
+	attN = N8_7,Null_0_0.31249997|0.312499702|5.52597115E-08_1.00000012|0|-1.1920929E-07_0.3125|0.312499702|0_1|5.96046448E-08|-1.1920929E-07
+	attN = N8_8,Null_0_0.220970869|0.312499702|0.220970869_0.707106829|-1.60437463E-16|0.707106709_0.220970869|0.312499702|0.220971107_0.707107067|0|0.707106829
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDynamicNodes
+		isEnabled = True
+		setIndex = 0
+		NodeSetIdx = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRoboticServoRotor
+		isEnabled = True
+		rpmLimit = 45
+		rotateCounterClockwise = False
+		inverted = False
+		ratcheted = 0
+		brakePercentage = 100
+		servoIsLocked = False
+		servoIsMotorized = True
+		jointParentRotation = 0,0,0,1
+		servoMotorIsEngaged = True
+		launchPosition = 45
+		servoMotorSize = 100
+		servoMotorLimit = 100
+		lockPartOnPowerLoss = True
+		servoTransformPosition = 0,0,1.36598093E-08
+		servoTransformRotation = 0,0,0,1
+		useMultipleDragCubes = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			BrakeAction
+			{
+				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MotorPowerAction
+			{
+				actionGroup = Custom01
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MotorDirectionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleServoLockedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoEngageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ServoDisgageLockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleMotorAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MotorOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MotorOffAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ResetPosition
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			rpmLimit
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+			}
+			servoMotorLimit
+			{
+				axisGroup = MainThrottle
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0.200000003
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceAutoShiftState
+		isEnabled = True
+		affectedResourceName = ElectricCharge
+		affectedModuleName = ModuleRoboticServoRotor
+		resourceShutOffStartUpUsePercent = True
+		resourceShutOffHandler = True
+		resourceStartUpHandler = True
+		resourceShutOffAmount = 0
+		resourceShutOffPercent = 0
+		resourceStartUpAmount = 0
+		resourceStartUpPercent = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = seatExternalCmd_4294596426
+	partName = Part
+	persistentId = 39561509
+	pos = -0.866353929,7.18945789,-1.39651155
+	attPos = 0.137153596,-0.0187013149,-0.0893669128
+	attPos0 = 5.71832061E-07,0.0187013149,0.41182518
+	rot = 0.707107902,0,0,0.707105756
+	attRot = -0.707106709,0.707106709,0,0
+	attRot0 = 1.07288372E-06,-1.07288372E-06,-0.707106829,0.707106829
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,ServiceBay.125.v2_4294607566,COL_Front,0|0|0.200000003,0|0|-1,0|0|0.200000003
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = KerbalSeat
+		isEnabled = True
+		ejectionForcePercentage = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			LeaveSeat
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294588864
+	partName = Part
+	persistentId = 2201533887
+	pos = -0.866354167,7.91191626,-1.7159667
+	attPos = -0.18230103,0.00154078007,0.34040451
+	attPos0 = 5.40167093E-08,-0.00154078007,-0.740404129
+	rot = 0,0.707106829,0,0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106829,-0.707106829,0
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = sasModule_4294586354
+	srfN = srfAttach,ServiceBay.125.v2_4294607566,COL_Back,0|-0.128734395|0,0|-1|0,0|-0.128734395|0
+	attN = top,Null_0_0|0.128734395|0_0|1|0_0|0.128734395|0_0|1|0
+	attN = bottom,sasModule_4294586354_0|-0.128734395|0_0|-1|0_0|-0.128734395|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 16
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = sasModule_4294586354
+	partName = Part
+	persistentId = 2025806476
+	pos = -0.866355777,7.71945381,-1.6309495
+	attPos = -0.0850173235,0.0273838043,-5.96046164E-07
+	attPos0 = 0,-0.219845772,-2.980231E-08
+	rot = -0.793650866,0,0,-0.608373642
+	attRot = 0.131010696,0,0,0.99138093
+	attRot0 = -0.56119585,0.430185139,-0.56119585,-0.430185139
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = sasModule_4294370210
+	attN = bottom,sasModule_4294370210_0|-0.0911109|0_0|-0.5|0_0|-0.0911109|0_0|-0.5|0
+	attN = top,strutCube_4294588864_0|0.0911109|0_0|0.5|0_0|0.0911109|0_0|0.5|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		actuatorModeCycle = 0
+		authorityLimiter = 100
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CycleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			Activate
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			Deactivate
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			Toggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 0.625
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 600
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = batteryPack_4294583116
+	partName = Part
+	persistentId = 2802264162
+	pos = -0.561864853,7.18954277,-1.76013041
+	attPos = 0,-0.0259132385,0.0456972122
+	attPos0 = -0.226464286,-0.278576016,0.276676178
+	rot = 0,-0.707106829,0,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.707106829,0.707106829,0
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,ServiceBay.125.v2_4294607566,COL_BOT,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 80
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = batteryPack_4294582728
+	partName = Part
+	persistentId = 3298297244
+	pos = -1.13971233,7.19607162,-1.79118776
+	attPos = 0,-0.00521808863,0.0745239258
+	attPos0 = -0.257521868,0.278576016,0.24132061
+	rot = 0,-0.707106829,0,0.707106829
+	attRot = 0,0,0,1
+	attRot0 = -0.707106829,0,0,0.707106829
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,ServiceBay.125.v2_4294607566,COL_TOP,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 80
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 100
+		maxAmount = 100
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Size1p5.Size0.Adapter.01_4294567628
+	partName = Part
+	persistentId = 2895804126
+	pos = -1.57469034,7.51191616,-1.53366613
+	attPos = 0,-0.594999969,0
+	attPos0 = 0,0.795000017,0
+	rot = -0.5,0.5,-0.5,-0.5
+	attRot = 0,0,0.707106769,0.707106769
+	attRot0 = 0,0,0,-1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = noseconeVS_4294556728
+	attN = top,noseconeVS_4294556728_0|0.375|0_0|1|0_0|0.375|0_0|1|0
+	attN = bottom,rotor.02_4294600110_0|-0.375|0_0|-1|0_0|-0.375|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.875
+		defaultScale = 1.875
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 86.5599976
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = Dark Grey
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 72
+		flowState = False
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 0
+		maxAmount = 88
+		flowState = False
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Size1p5.Size0.Adapter.01_4294566310
+	partName = Part
+	persistentId = 2915779653
+	pos = -0.158017218,7.51191616,-1.53366613
+	attPos = 0,-0.594999969,0
+	attPos0 = 0,0.794999778,0
+	rot = 0.5,0.5,-0.5,0.5
+	attRot = 0,0,0.707106709,-0.707106709
+	attRot0 = 0,0,0,-1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = noseconeVS_4294556416
+	attN = top,noseconeVS_4294556416_0|0.375|0_0|1|0_0|0.375|0_0|1|0
+	attN = bottom,rotor.02_4294599134_0|-0.375|0_0|-1|0_0|-0.375|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 1.875
+		defaultScale = 1.875
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 86.5599976
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = Dark Grey
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 72
+		flowState = False
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 0
+		maxAmount = 88
+		flowState = False
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = noseconeVS_4294556728
+	partName = Part
+	persistentId = 1988359285
+	pos = -1.94969249,7.51191616,-1.53366601
+	attPos = 0,0,0
+	attPos0 = 0,0.37500006,0
+	rot = -0.5,0.5,-0.5,-0.5
+	attRot = 0,0,0.707106769,0.707106769
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,Size1p5.Size0.Adapter.01_4294567628_0|0|0_0|-1|0_0|0|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels5_4294550916
+	partName = Part
+	persistentId = 877941693
+	pos = -0.870273173,8.11933899,-1.37090826
+	attPos = 0,0,0
+	attPos0 = 0.162758067,0.00391924381,-0.607421875
+	rot = 0.430459321,-0.43045938,-0.560985506,-0.560985565
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.991444945,0,-0.130526125
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,ServiceBay.125.v2_4294607566,COL_Back,0|0|0,0|0|1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (0.707106829, 0, 0, 0.707106829)
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		deployState = EXTENDED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ExtendAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			RetractAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 75
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = solarPanels5_4294550728
+	partName = Part
+	persistentId = 3674877018
+	pos = -0.86883378,8.11858368,-1.69622183
+	attPos = 0,0,0
+	attPos0 = -0.162556112,0.00247961283,-0.606667519
+	rot = -0.560985506,0.560985565,0.43045944,0.430459321
+	attRot = 0,0,0,1
+	attRot0 = 1.49011612E-08,0.991444886,2.98023224E-08,-0.130526096
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,ServiceBay.125.v2_4294607566,COL_Back_Left,0|0|0,0|0|1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDeployableSolarPanel
+		isEnabled = True
+		efficiencyMult = 1
+		launchUT = -1
+		currentRotation = (0.707106829, 0, 0, 0.707106829)
+		storedAnimationTime = 0
+		storedAnimationSpeed = 0
+		deployState = EXTENDED
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ExtendPanelsAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ExtendAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			RetractAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 75
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = sasModule_4294370210
+	partName = Part
+	persistentId = 916844117
+	pos = -0.8663553,7.76678848,-1.80691671
+	attPos = 0.165272519,0.0273838043,-2.3841848E-07
+	attPos0 = -4.47034978E-08,-0.182221964,-1.52736959E-07
+	rot = -0.793650746,0,-1.49011612E-08,-0.608373761
+	attRot = 0.131010696,0,0,0.99138093
+	attRot0 = -1.19209275E-07,0,0,1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,Null_0_0|-0.0911109|0_0|-0.5|0_0|-0.0911109|0_0|-0.5|0
+	attN = top,sasModule_4294586354_0|0.0911109|0_0|0.5|0_0|0.0911109|0_0|0.5|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		actuatorModeCycle = 0
+		authorityLimiter = 100
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CycleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			Activate
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			Deactivate
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			Toggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 0.625
+		defaultTransformScale = (0, 0, 0)
+		DryCost = 600
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = noseconeVS_4294556416
+	partName = Part
+	persistentId = 4261440761
+	pos = 0.216982782,7.51191616,-1.53366613
+	attPos = 0,-0.175000027,0
+	attPos0 = 0,0.375,0
+	rot = -0.5,-0.5,0.5,-0.5
+	attRot = 0,0,0.707106709,-0.707106709
+	attRot0 = 0,0,0,-1
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,Size1p5.Size0.Adapter.01_4294566310_0|0|0_0|-1|0_0|0|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
